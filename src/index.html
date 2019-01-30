@@ -1,15 +1,26 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <button onclick="buttonStart()"></button>
-    <a href="COLOCAR O # + O NOME DO ID DO TITULO"> Clique aqui para começar!</a>
-    <script src="cipher.js"></script>
-    <script src="tests.js"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Caesar Cipher</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="root"></div>
+  <h1 id="title"> Crifrar e Decifrar!</h1>
+  <p class="question">Digite o seu deslocamento:</p><br>
+  <input id="enterOffset" type="number" value=""><br>
+  <input id="enterText" type="textarea" value=""><br>
+  <button id="buttonCripto" onclick="cripto()">Cifrar</button>
+  <button id="buttonDescripto" onclick="descripto()">Decifrar</button>
+  <p id="answer1">Mensagem Cifrada: </p><br>
+  <p id="resultAnswerCripto"></p>
+  <p id="answer2">Mensagem Decifrada: </p><br>
+  <p id="resultAnswerDecripto"></p>
+  <script src="cipher.js"></script>
+  <script src="tests.js"></script>
+</body>
+
 </html>
