@@ -3,15 +3,30 @@ body{
     background-size: 100%;
     background-position: center;
     background-attachment: fixed;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }    
 
 h1{
     text-align: center;
     color: rgb(42, 9, 70);
     font-size: 50px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-top: 
+    margin-top: 30px;
+}
+
+#buttonCripto{
+    background: #e6ccff;
+    font-weight: bold;
+    margin: center;
+    color: rgb(42, 9, 70);
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#buttonDescripto{
+    background: #e6ccff;
+    font-weight: bold;
+    margin: center;
+    color: rgb(42, 9, 70);
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 #root{
@@ -21,12 +36,12 @@ h1{
     padding:10px 0px 100px 0px;
     margin: 70px 400px 80px 400px;
     text-align: center;
+    color:  rgb(42, 9, 70);
 }
 
 .question{
     text-align: center;
     font-size:20px;
-
 }
 
 #enterOffset{
