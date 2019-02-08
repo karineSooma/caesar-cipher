@@ -25,6 +25,9 @@ function cipher(offset, message) {
         } else if (message.charCodeAt(i) === 32) {
             code = 32;
         }
+        else if (!(message.charCodeAt(i) >= 65 && message.charCodeAt(i) <= 90 || message.charCodeAt(i) >= 97 && message.charCodeAt(i) <= 122 )){
+            code = message.charCodeAt(i);
+        }
         resultMessage += String.fromCharCode(code);
     }
     return resultMessage;
@@ -39,6 +42,9 @@ function decipher(offset, message) {
             code = (((message.charCodeAt(i) - 97) - offset % 26) + 26) % 26 + 97;
         } else if  (message.charCodeAt(i) === 32) {
             code = 32;
+        }
+        else if (!(message.charCodeAt(i) >= 65 && message.charCodeAt(i) <= 90 || message.charCodeAt(i) >= 97 && message.charCodeAt(i) <= 122 )){
+            code = message.charCodeAt(i);
         }
         resultMessage += String.fromCharCode(code);
     }
